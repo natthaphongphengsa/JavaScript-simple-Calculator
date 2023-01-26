@@ -7,41 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <div class="status">
-            <input type="text" id="resultonly">            
-            <input type="text" id="Update"/>            
-            <input type="text" id="result">            
+    <div class="align-center">
+        <div class="calculator">
+            <div class="logo">
+                <h1>D2D</h1>
+            </div>
+            <div class="status">
+                <select id="previusresults" onchange="previus(this.options[this.selectedIndex].value)" style="display: none;">
+                </select>       
+                <input type="text" id="result" disabled>           
+                <input type="text" id="current" value="" disabled>            
+            </div>
+            <div class="panel">
+                <input class="btn" type="button" value="1" onclick="Input(this)"> 
+                <input class="btn" type="button" value="2" onclick="Input(this)"> 
+                <input class="btn" type="button" value="3" onclick="Input(this)">
+                <input class="btn" type="button" value="/" onclick="Input(this)">
+                <br>
+                
+                <input class="btn" type="button" value="4" onclick="Input(this)"> 
+                <input class="btn" type="button" value="5" onclick="Input(this)"> 
+                <input class="btn" type="button" value="6" onclick="Input(this)"> 
+                <input class="btn" type="button" value="-" onclick="Input(this)">
+                <br>
+        
+                <input class="btn" type="button" value="7" onclick="Input(this)"> 
+                <input class="btn" type="button" value="8" onclick="Input(this)"> 
+                <input class="btn" type="button" value="9" onclick="Input(this)">     
+                <input class="btn" type="button" value="+" onclick="Input(this)">
+                <br>
+        
+                <input class="btn" type="button" value="AC"onclick="Clear(this)"> 
+                <input class="btn" type="button" value="0" onclick="Input(this)">
+                <input class="btn" type="button" value="C" onclick="Clear(this)">   
+                <input class="btn" type="button" value="*" onclick="Input(this)">
+                <br>
+                <input class="btn" type="button" value="H" onclick="clearHistory(this)">
+                <input class="btn" type="button" value="=" onclick="solve(this)">
+            </div> 
+            <div class="footer">
+                <p>V 2.0</p>
+            </div>          
         </div>
-        <br><br> 
-        <input class="btn" type="button" value="1" onclick="dis('1')"> 
-        <input class="btn" type="button" value="2" onclick="dis('2')"> 
-        <input class="btn" type="button" value="3" onclick="dis('3')">
-        <input class="btn" type="button" value="/" onclick="dis('/')">
-        <br>
-        
-        <input class="btn" type="button" value="4" onclick="dis('4')"> 
-        <input class="btn" type="button" value="5" onclick="dis('5')"> 
-        <input class="btn" type="button" value="6" onclick="dis('6')"> 
-        <input class="btn" type="button" value="-" onclick="dis('-')">
-        <br>
-
-        <input class="btn" type="button" value="7" onclick="dis('7')"> 
-        <input class="btn" type="button" value="8" onclick="dis('8')"> 
-        <input class="btn" type="button" value="9" onclick="dis('9')">     
-        <input class="btn" type="button" value="+" onclick="dis('+')">
-        <br>
-
-        <input class="btn" type="button" value="AC"onclick="clr('AC')"> 
-        <input class="btn" type="button" value="0" onclick="dis('0')">
-        <input class="btn" type="button" value="C" onclick="clr('C')">   
-        <input class="btn" type="button" value="*" onclick="dis('*')">
-        <br>
-        
-        <input id="qeuals" type="button" value="=" onclick="solve()">
-
-           
-    </div>
+    </div>    
 </body>
 <script src="script.js"></script>
 </html>

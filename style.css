@@ -1,56 +1,77 @@
 body{
-    background-color: gray;
-}
-#Update{
-    border: none;
-    width: 100%;
-    height: auto;
-    font-size: 26px;
-    float: left;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#result{
-    width: 100%;
-    height: auto;
-    font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#resultonly{
-    border: none;
-    width: 100%;
-    height: auto;
-    font-size: 26px;
-    font-family: Arial, Helvetica, sans-serif;
-
+    background-color: whitesmoke;
 }
 .status{
-    border: solid;
-    border-radius: 8px ;
-    width: auto;
-    padding: 20px;
+    border: solid 1px #ffffffd4;
+    max-width: 100%;
+    border-radius: 180px;
+    margin: 32px 50px 0px;
 }
-#qeuals, .btn{
-    width: 89px;
+.status > input{
+    max-width: 90%;
+    font-size: 32px;
+    border: none;
+    text-align: end;
+    background-color: transparent;
+    color: whitesmoke;
+}
+#previusresults{
+    width: 90%;
+    font-size: 18px;
+    border: 0;
+    text-align: end;
+    background-color: transparent;
+    color: whitesmoke;
+}
+.btn{
+    width: 84px;
     font-size: 36px;
     margin: 4px;
-    border-radius: 12px;
+    border-radius: 180px;
     border: none;
     padding: 20px;
-    background-color: rgb(231, 240, 255);
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #8a5acf4d;
+    color: whitesmoke;  
+    transition: 250ms;  
 }
 .btn:hover{
-    background-color: rgb(143, 184, 255);
-    color: white;
-}
-#qeuals:hover{
-    background-color: rgb(143, 184, 255);
-    color: white;
+    background: whitesmoke;
+    color: #8E2DE2;
 }
 .calculator{
-    margin: auto;
-    background-color: white;
-    padding: 50px;
-    width: 400px;
+    box-shadow: rgb(0 0 0 / 30%) 0px 7px 22px 10px;
+    width: 500px;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 95px 8px 268px 8px;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+
+
+}
+.panel{
+    text-align: center;
+    padding: 50px;
+}
+.align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.footer{
+    margin: 12px;
+    text-align: star;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Arial, Helvetica, sans-serif, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.logo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Arial, Helvetica, sans-serif, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: 8px;
+    color: whitesmoke;
+    text-align: center;
 }
